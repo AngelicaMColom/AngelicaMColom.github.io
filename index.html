@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portafolio_AngelicaMD</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body>
+  <div class ="home-wrapper ">
+    <header>
+      <div class="container" id="container">
+        <nav>
+          <a class = "active" href="#home">HOME</a>
+          <a href="#profile">PROFILE</a>
+          <a href="#skills">SKILLS</a>
+          <a href="#education">EDUCATION</a>
+          <a href="#contacto">CONTACT</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id = "home">
+    <h1> <strong>ANGÉLICA MARÍA DUQUE CASTRILLÓN</strong></h1>
+    <div class ="divider"></div>
+    <P>Mechanical Engineer and Ruby on Rails Full-stack develope</P>
+    <div>
+      <a href="https://www.facebook.com/angelica.castrillon1"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/ang%C3%A9lica-mar%C3%ADa-duque-castrill%C3%B3n-ba833810b/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href="https://github.com/AngelicaMColom"><i class="fa fa-github" aria-hidden="true"></i></a>
+    </section>
+
+  </div>
+  <section id= "profile">
+    <h2>Profile</h2>
+    <div class = "box">
+      <p>Mechanical Engineer and Ruby on Rails Full-stack developer, experience in digital marketing and sales management. Person who has affinity to creating logical and innovative solutions to complex problems.
+        Thorough and precise in everything she does, and has a keen interest in technology, tribology and I+D.</p>
+      </div>
+    </section>
+    <section id= "skills">
+      <h2>Skills</h2>
+    </section>
+
+    <section id=education>
+      <h2>Education</h2>
+      <div class = "box">
+        <h3>Bachelor’s Degree in Mechanical Engineering</h3>
+        <p>Universidad Pontificia Bolivariana of Colombia</p>
+      </div>
+      <div class = "box">
+        <h3>Full Stack-Web developer</h3>
+        <p>Make it real camp </br>Web development, bootcamp</p>
+      </div>
+
+    </section>
+    <section id= "contacto">
+      <h2>CONTACTO</h2>
+      <form action="">
+        <div><input type="text" placeholder="email" ></div>
+        <div><textarea  rows="10" placeholder="you menssenger"></textarea></div>
+        <div><button class= "active">ENVIAR</button></div>
+      </form>
+    </section>
+
+    <script type="text/javascript">
+    function myFunction() {
+      var x = document.getElementById("container");
+      if (x.className === "container") {
+        x.className += " responsive";
+      } else {
+        x.className = "container";
+      }
+    }
+    </script>
+  </body>
+  </html>
