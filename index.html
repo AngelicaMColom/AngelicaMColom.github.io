@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
- <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portafolio_AngelicaMD</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lobster|PT+Sans" rel="stylesheet">
-    <link href="src/style.css" rel="stylesheet">
- </head>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portafolio_AngelicaMD</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lobster|PT+Sans" rel="stylesheet">
+  <link href="src/style.css" rel="stylesheet">
+</head>
 
- <body>
+<body>
   <div class ="home-wrapper ">
     <nav class="container" id="container">
       <a class ="active" href="#home">HOME</a>
@@ -24,20 +24,19 @@
 
   <div class="cont-body">
     <section id = "home">
-          <h1> Hello.</h1>
-          <h2> <strong>ANGÉLICA MARÍA DUQUE CASTRILLÓN</strong></h2>
-          <P>Mechanical Engineer and Ruby on Rails Full-stack develope</P>
-          <div>
-            <a class ="exp" href="https://www.facebook.com/angelica.castrillon1"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a class ="exp" href="https://www.linkedin.com/in/ang%C3%A9lica-mar%C3%ADa-duque-castrill%C3%B3n-ba833810b/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            <a class ="exp" href="https://github.com/AngelicaMColom"><i class="fa fa-github" aria-hidden="true"></i></a>
-          </div>
-
+      <h1> Hello.</h1>
+      <h2> <strong>ANGÉLICA MARÍA DUQUE CASTRILLÓN</strong></h2>
+      <P>Mechanical Engineer and Ruby on Rails Full-stack develope</P>
+      <div>
+        <a class ="exp" href="https://www.facebook.com/angelica.castrillon1"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a class ="exp" href="https://www.linkedin.com/in/ang%C3%A9lica-mar%C3%ADa-duque-castrill%C3%B3n-ba833810b/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a class ="exp" href="https://github.com/AngelicaMColom"><i class="fa fa-github" aria-hidden="true"></i></a>
+      </div>
     </section>
 
     <section id= "profile">
       <div class="image">
-          <img src="src/imag/perfil.jpg" alt="perfil">
+        <img src="src/imag/perfil.jpg" alt="perfil">
       </div>
       <div class = "box">
         <h2>Profile</h2>
@@ -77,52 +76,52 @@
       </section>
     </div>
 
-  <script type="text/javascript">
-
-window.onscroll = function() {
-   checkSklls();
-  }
-
- function myFunction() {
-   var x = document.getElementById("container");
-    if (x.className === "container"){
-        x.className += " responsive";
-    } else {
-       x.className = "container";
-     }
-  }
-   
- function overRemover() {
-   var x = document.querySelectorAll(".over");
-     setTimeout(function(){x.forEach(item => item.classList.remove("over"));}, 100);
+    <script type="text/javascript">
+    window.onscroll = function() {
+      checkSklls();
     }
 
- function isElementInViewport(el) {
-  var rect = el.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document. documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document. documentElement.clientWidth)
-  );
-}
+    function myFunction() {
+      var x = document.getElementById("container");
+      if (x.className === "container"){
+        x.className += " responsive";
+      } else {
+        x.className = "container";
+      }
+    }
 
-function checkSklls() {
-  var old_visible;
-  var skills = document.getElementsByClassName('skills')[0];
-  var visible = isElementInViewport(skills);
-  if (visible !=old_visible && visible) {
-      old_visible = visible;
-      overRemover();
 
-  } else if (!visible) {
-  var y = skills.getElementsByTagName('div');
-  var arr = Array.prototype.slice.call(y);
-  arr.forEach(item => item.classList.add("over"));
+    function overRemover() {
+      var x = document.querySelectorAll(".over");
+      setTimeout(function(){x.forEach(item => item.classList.remove("over"));}, 100);
+    }
 
-  }
-}
+    function isElementInViewport(el) {
+      var rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document. documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document. documentElement.clientWidth)
+      );
+    }
 
-   </script
+    function checkSklls() {
+      var old_visible;
+      var skills = document.getElementsByClassName('skills')[0];
+      var visible = isElementInViewport(skills);
+      if (visible !=old_visible && visible) {
+        old_visible = visible;
+        overRemover();
+
+      } else if (!visible) {
+        var y = skills.getElementsByTagName('div');
+        var arr = Array.prototype.slice.call(y);
+        arr.forEach(item => item.classList.add("over"));
+
+      }
+    }
+    
+    </script
   </body>
 </html>
