@@ -83,34 +83,21 @@ window.onscroll = function() {
    checkSklls();
   }
 
-
-function bacImag() {
-  ar x = document.getElementById("container");
-  if (x.className === "container"){
-    x.className += " responsive";
-  } else {
-    x.className = "container";
-  }
-}
-
-}
-
-    function myFunction() {
-      var x = document.getElementById("container");
-      if (x.className === "container"){
+ function myFunction() {
+   var x = document.getElementById("container");
+    if (x.className === "container"){
         x.className += " responsive";
-      } else {
-        x.className = "container";
-      }
+    } else {
+       x.className = "container";
+     }
+  }
+   
+ function overRemover() {
+   var x = document.querySelectorAll(".over");
+     setTimeout(function(){x.forEach(item => item.classList.remove("over"));}, 100);
     }
 
-
-    function overRemover() {
-      var x = document.querySelectorAll(".over");
-      setTimeout(function(){x.forEach(item => item.classList.remove("over"));}, 100);
-    }
-
-  function isElementInViewport(el) {
+ function isElementInViewport(el) {
   var rect = el.getBoundingClientRect();
   return (
     rect.top >= 0 &&
